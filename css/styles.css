@@ -19,7 +19,6 @@ li {
 
 .container {
     
-
     width: 1230px;
     margin-left: auto;
     margin-right: auto;
@@ -49,34 +48,32 @@ body {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+
 }
 
-.page-header {
-    background-color: rebeccapurple;
-}
 
 .main-nav {
     display: flex;
     align-items: center;
+     
 }
-
 
 
 .logo>span {
     color: var(--accent-color);
 }
-.site-nav li {
+
+
+.site-nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.site-nav:last-child {
-    margin-right: 0;
-}
 
 .site-nav {
     display: flex;
     margin-left: 85px;
 }
+
 .site-nav a {
     
     color: var(--primary-text-color);
@@ -95,6 +92,8 @@ body {
 .mail {
     color: var(--accent-color);
     text-decoration: none;
+
+    margin-right: 50px;
     
 }
 
@@ -104,14 +103,11 @@ body {
     
 }
 
-.list {
+.mail-nav {
     display: flex;
-    margin-right: auto;
+    margin-left: auto;
 }
 
-.list .mail {
-    margin-right: 50px;
-}
 .heading {
     margin-top: 0;
     margin-bottom: 80px;
@@ -157,15 +153,12 @@ body {
 /*проекти*/
 
 .project {
-
 display: flex;
 flex-wrap: wrap;
-background-color: slateblue;
 }
 
 .project-element {
     width: 370px;
-    background-color: sienna;
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -176,6 +169,20 @@ background-color: slateblue;
 
 .project-element:nth-last-child(-n+3) {
     margin-bottom: 0px;
+}
+/*преимущества*/
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advan-list {
+    width: calc((100% - 30px * 3) / 4);
+}
+
+.advan-list:not(:last-child) {
+    margin-right: 30px;
 }
 
 /*примеры работы*/
@@ -203,19 +210,16 @@ background-color: slateblue;
 .subject-element {
     display: flex;
     flex-wrap: wrap;
+}
 
-    justify-content: center;
-
-    
+.subject-element:not(:last-child) {
+    margin-right: 30px;
 }
 
 .client-element {
     display: flex;
     flex-wrap: wrap;
-    
-    margin-right: 30px;
-    margin: 0px;
-    padding: 0px;
+
     justify-content: center;
 }
 
@@ -241,25 +245,39 @@ background-color: slateblue;
     line-height: 19px;
     
 }
+.client-element {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin: 0 0 20px;
+}
+.client-title:not(:last-child) {
+    margin-right: 30px;
+}
 
 .client-title {
-    width: 170px;
-    background-color: sienna;
-    margin-right: 30px;
-    
+    width: 170px;  
 
 }
 
-.team-element {
-    margin-right: 30px;
-    
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.team-element:not(:last-child)  {
+    margin-right: 30px;   
 }
 
 .button.primary {
     color: #FFFFFF;
-    background-color: var(--accent-color);
-   
+    background-color: var(--accent-color); 
 }
+
 .button {
     display: inline-block;
     border: 1px;
@@ -272,10 +290,14 @@ background-color: slateblue;
     line-height: 1.9;
     text-decoration: none;
     text-align: center;
-
-    
+      
 }
 
+.btn {
+   text-align: center;
+   margin-right: 8px;
+   margin-bottom: 54px;
+}
 
 /*название*/
 
@@ -310,18 +332,16 @@ button:hover {
 /*футер*/
 
 .address  {
-
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
-    
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
+
 
 .contact {
     background-color: #2F303A;
+    margin-bottom: 20px;
 
-    
 }
 
 .aside {
@@ -330,6 +350,11 @@ button:hover {
     
 }
 
+.link {
+    display: flex;
+}
+
+
 .logo-footer {
     color: #FFFFFF;
     font-family: 'Raleway', sans-serif;
@@ -337,6 +362,8 @@ button:hover {
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
+
+    margin-bottom: 20px;
 }
 
 .logo-footer>span {
@@ -346,6 +373,3 @@ button:hover {
 
 /*преимущества*/
 
-.advantages {
-    
-}
