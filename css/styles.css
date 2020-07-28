@@ -135,8 +135,9 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-
+    
 }
+
 
 .text {
     color:var(--title-text-color);
@@ -197,7 +198,7 @@ flex-wrap: wrap;
     margin-bottom: 50px;
 
     color:var(--primary-text-color);
-    background-color: sandybrown;
+
 
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -210,6 +211,7 @@ flex-wrap: wrap;
 .subject-element {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .subject-element:not(:last-child) {
@@ -267,7 +269,9 @@ flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-
+.team-element {
+    text-align: center;
+}
 
 .team-element:not(:last-child)  {
     margin-right: 30px;   
@@ -334,26 +338,38 @@ button:hover {
 .address  {
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    
 }
 
 
 .contact {
     background-color: #2F303A;
-    margin-bottom: 20px;
 
+    padding: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    
 }
+
 
 .aside {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    
 }
 
 .link {
     display: flex;
+} 
+
+.itfl {
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.1);
 }
 
+.add-info {
+    margin-top: 20px;
+}
 
 .logo-footer {
     color: #FFFFFF;
@@ -363,8 +379,8 @@ button:hover {
     line-height: 1.2;
     text-decoration: none;
 
-    margin-bottom: 20px;
 }
+
 
 .logo-footer>span {
     color: var(--accent-color);
