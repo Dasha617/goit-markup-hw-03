@@ -233,14 +233,15 @@ flex-wrap: wrap;
 .subject-element {
     display: flex;
     flex-wrap: wrap;
-
-    justify-content: space-around;
 }
 
 .subject-element:not(:last-child) {
     margin-right: 30px;
 }
 
+.sub-element:not(:last-child) {
+    margin-right: 30px;
+}
 
 
 
