@@ -185,6 +185,7 @@ flex-wrap: wrap;
 .project-element:nth-last-child(-n+3) {
     margin-bottom: 0px;
 }
+
 /*преимущества*/
 
 .advantages {
@@ -233,6 +234,7 @@ flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
 
+    justify-content: space-around;
 }
 
 .subject-element:not(:last-child) {
