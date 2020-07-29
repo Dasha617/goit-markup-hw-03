@@ -19,16 +19,17 @@ li {
 
 .container {
     
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section {
-   padding-bottom: 94px;
+
 
 }
 
@@ -54,8 +55,11 @@ body {
 
 .main-nav {
     display: flex;
-    align-items: center;
-     
+    align-items: center;   
+}
+
+.mail-nav :hover {
+    color: var(--accent-color);
 }
 
 
@@ -89,18 +93,16 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav :active{
+    color:var(--title-text-color)
+}
+
 .mail {
-    color: var(--accent-color);
+    color: var(--title-text-color);
     text-decoration: none;
 
     margin-right: 50px;
-    
-}
-
-.phone {
-    color: var(--title-text-color);
-    text-decoration: none;
-    
+ 
 }
 
 .mail-nav {
@@ -113,7 +115,6 @@ body {
     margin-bottom: 80px;
 
 
-    background-color: rgba(47, 48, 58, 0.8);
     color: #FFFFFF;
 
     font-family: 'Roboto', sans-serif;
@@ -122,6 +123,19 @@ body {
     line-height: 1.4;
     text-align: center;
 
+}
+.pickcha {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-image: url(../img/Header\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+   
 }
 
 .subtitle {
@@ -186,6 +200,8 @@ flex-wrap: wrap;
     margin-right: 30px;
 }
 
+
+
 /*примеры работы*/
 
 .comanda {
@@ -198,7 +214,7 @@ flex-wrap: wrap;
     margin-bottom: 50px;
 
     color:var(--primary-text-color);
-
+    
 
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -207,6 +223,11 @@ flex-wrap: wrap;
     text-align: center;
 
 }
+
+.cont-comanda {
+    background: #F5F4FA;
+}
+
 
 .subject-element {
     display: flex;
@@ -218,12 +239,6 @@ flex-wrap: wrap;
     margin-right: 30px;
 }
 
-.client-element {
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
-}
 
 
 
@@ -251,7 +266,6 @@ flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
 
-    justify-content: center;
 
     margin: 0 0 20px;
 }
@@ -301,12 +315,26 @@ flex-wrap: wrap;
    text-align: center;
    margin-right: 8px;
    margin-bottom: 54px;
+
 }
 
-/*название*/
+.btn-element {
+    display: inline-block;
+    border: 1px;
+    border-radius: 6px;
+    padding: 11px 34px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    text-decoration: none;
+    text-align: center;
+}
 
 button:hover {
-    color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: #FFFFFF;
 }
 
 
