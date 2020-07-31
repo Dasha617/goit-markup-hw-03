@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
     <!---Шапка сайта-->
@@ -13,7 +14,7 @@
          <div class="container">
 
           <header class="page-header">
-               <nav class="container main-nav"> 
+               <nav class="main-nav"> 
                    <a class="logo" href="/"> <span class="span">Web</span>Studio</a>
           
                <ul class="site-nav">
@@ -22,8 +23,8 @@
                    <li class="site-nav-item"><a href="">Контакты</a></li>  
                </ul>
                <ul class="mail-nav">
-                    <li><a class="mail" href="">info@devstudio.com</a></li>
-                    <li><a class="mail" href="">+38 096 111 11 11</a></li>
+                    <li><a class="mail mail-pick" href="">info@devstudio.com</a></li>
+                    <li><a class="mail phone-pick" href="">+38 096 111 11 11</a></li>
   
                </ul>
                </nav>
@@ -51,23 +52,23 @@
 
             <ul class="advantages list">
                 <li class="advan-list" >
-                   <img src="./img/Vector.png" alt="" />
-                   <h3 class="subtitle">Внимание к деталям</h3>
+                   
+                   <h3 class="subtitle ">Внимание к деталям</h3>
                    <b class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</b>
                 </li>
-                <li class="advan-list"> 
-                   <img src="./img/Vector(1).png" alt="" />
+                <li class="advan-list advan-clock"> 
+                   
                    <h3 class="subtitle">Пунктуальность</h3>
                    <b class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</b>
                 </li>
-                <li class="advan-list">
-                   <img src="./img/Vector(2).png" alt="" />
+                <li class="advan-list advan-comp">
+                   
                    <h3 class="subtitle">Планирование</h3>
                    <b class="text"> Равным образом консультация с широким активом в значительной степени обуславливает.</b>
                 </li>
-                <li class="advan-list">
-                   <img src="./img/Vector(3).png" alt="" />
-                   <h3 class="subtitle">Современные технологии</h3>
+                <li class="advan-list advan-austronavt">
+                   
+                   <h3 class="subtitl">Современные технологии</h3>
                    <b class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</b>
                 </li>
             </ul>
@@ -101,12 +102,14 @@
         </section>
       
     <!--Колектив-->
-    
-        <section class="section">
-        <div class="container cont-comanda">
-          <div class="">
-            <h2 class="subject">Наша команда</h2>
 
+    <div class="fon">
+
+        <section class="section">
+        <div class="container">
+          
+            <h2 class="subject">Наша команда</h2>
+            
             <ul class="team list">
                <li class="team-element">
                   <img src="./img/img.jpg" width="270" alt="Лицо компании"/>
@@ -148,6 +151,7 @@
                   <a href=""><img src="./img/Ellipse(4).png" alt="linkedin"/></a>
         
             </ul>
+         
          </div>
          </div> 
        </section>
@@ -160,22 +164,22 @@
            <h2 class="subject">Постоянные клиенты</h2>
            <ul class="client-element list">
                <li class="client-title">
-                   <img src="./img/Client 1.png" alt="YA & CO" />
+                   
                </li>
                <li class="client-title">
-                  <img src="./img/Client 2.png" alt="Company tag line here" />
+                  
                </li>
                <li class="client-title">
-                  <img src="./img/Client 3.png" alt="Company" />
+                  
                </li>
                <li class="client-title">
-                  <img src="./img/Client 4.png" alt="Foster Peters" />
+                  
                </li>
                <li class="client-title">
-                  <img src="./img/Client 5.png" alt="Brand" />
+                  
                </li>
                <li class="client-title"> 
-                  <img src="./img/Client 6.png" alt="Company tag line" />
+                  
                </li>
            </ul>
 
@@ -186,45 +190,45 @@
 
 <!--Футер-->
 
+   <div class="fon-footer">
+     <section class="section">
+     <div class="container">
 
-   <section class="section">
-   <div class="container">
-
-      <footer class="contact">
-         <div class="add">
-            <a class="logo-footer" href="/"> <span class="span" >Web</span>Studio</a> 
+          <footer class="contact">
+             <div class="add">
+               <a class="logo-footer" href="/"> <span class="span" >Web</span>Studio</a> 
      
   
   
-        <ul class="list add-info">
-            <li><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
-            <li><a class="aside" href="">info@devstudio.com</a></li>
-            <li><a class="aside" href="">+38 096 111 11 11</a></li>
-        </ul>
-    </div>
+            <ul class="list add-info">
+               <li><address class="address">г. Киев, пр-т Леси Украинки, 26</address></li>
+               <li><a class="aside" href="">info@devstudio.com</a></li>
+               <li><a class="aside" href="">+38 096 111 11 11</a></li>
+            </ul>
+     </div>
  
-    <div class="add-link">
-        <h3 class="address" >присоединяйтесь</h3>
-        <ul class="list link">
-            <li class="itfl"> <a href=""><img src="./img/Ellipse.png" alt="instagram"/></a>
-            </li>
-            <li class="itfl"> <a href=""><img src="./img/Ellipse(1).png" alt="twitter"/></a>
-            </li>
-            <li class="itfl"> <a href=""><img src="./img/Ellipse(3).png" alt="facebook"/></a>
-            </li>
-            <li class="itfl"> <a href=""><img src="./img/Ellipse(4).png" alt="linkedin"/></a>
-        </ul>
+     <div class="add-link">
+            <h3 class="address" >присоединяйтесь</h3>
+            <ul class="list link">
+               <li class="itfl"> <a href=""><img src="./img/Ellipse.png" alt="instagram"/></a>
+               </li>
+               <li class="itfl"> <a href=""><img src="./img/Ellipse(1).png" alt="twitter"/></a>
+               </li>
+               <li class="itfl"> <a href=""><img src="./img/Ellipse(3).png" alt="facebook"/></a>
+               </li>
+               <li class="itfl"> <a href=""><img src="./img/Ellipse(4).png" alt="linkedin"/></a>
+            </ul>
      </div>
         <!--рассылка-->
     
        
-    <div class="add-forma">
-         <h3 class="address">подпишитесь на рассылку</h3>
-         <input type="email" placeholder="e-mail"/>
-         <input type="button" value="Подписаться" />
-    </div> 
+         <div class="add-forma">
+             <h3 class="address">подпишитесь на рассылку</h3>
+             <input type="email" placeholder="e-mail"/>
+             <input  type="button" value="Подписаться" />
+          </div> 
       </footer>
 
+      </div>
+      </section>
    </div>
-   </section>
-
